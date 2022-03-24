@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>AI DJ Web App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="//cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+    </head>
+    <body background="DJ Background.jpg">
+        <center>
+            <h3 class="btn btn-warning heading">AI DJ Web App
+                <br>
+                <span class="note">Move your left hand wrist up and down for increasing and decreasing the volume.Move your right hand wrist up and down for increasing and decreasing your speed.</span>
+            </h3>
+            <div class="speed">
+                <img src="Disk.gif" class="speed_img">
+                <br>
+                <h3 class="btn btn-danger" id="h3_speed">Speed</h3>
+            </div>
+            <div class="volume">
+                <img src="Disk.gif" class="volume_img">
+                <br>
+                <h3 class="btn btn-danger" id="h3_volume">Volume</h3>
+            </div>
+            <br>
+            <br>
+            <button onclick="play();" class="btn btn-success play_button">Play</button>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
